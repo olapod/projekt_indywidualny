@@ -1,6 +1,11 @@
+
 /* Colors */
-$paragraph-color: #000000;
-$brand-main-color: #ff0000;
+$paragraph-color: #a6a6a6;
+$sidebar-color: #191919;
+$sidebar-font-color: #888888;
+$sidebar-hover-color: #282828;
+$sidebar-hover-font-color: #ffffff;
+$dashboard-hover: #f3f3f1;
 
 /* Font sizes */
 $paragraph-font-size: 16px;
@@ -8,3 +13,10 @@ $paragraph-font-size: 16px;
 /* Fonts */
 $brand-font: "Glyphter", Helvetica, Arial;
 $paragraph-font: "Glyphter", Helvetica, Arial;
+$handmade-font: 'Petit Formal Script', cursive;
+$handmade-font2: 'Felipa', cursive;
+$primary-font: 'Roboto', sans-serif;
+
+/* Boarders */ 
+$container-boarder: 25px solid #a6a6a6;
+$inside-boarder: 1px solid #a6a6a6;
