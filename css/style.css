@@ -830,6 +830,12 @@ body {
   height: 100vh;
 }
 
+.mobile-menu {
+  display: none;
+  background-color: #191919;
+  color: #555555;
+}
+
 .sidebar {
   background-color: #191919;
   color: #555555;
@@ -854,6 +860,7 @@ body {
 .menu {
   font-size: 14px;
   font: "Roboto", sans-serif;
+  height: 100vh;
 }
 
 .menu .menu-list {
@@ -893,8 +900,8 @@ body {
 .menu p {
   font-weight: 400;
   display: inline;
-  position: relative;
-  top: -14px;
+  position: absolute;
+  left: 70px;
 }
 
 .menu .dot-login {
@@ -903,9 +910,8 @@ body {
   background-color: #04ae00;
   border-radius: 50%;
   display: inline-block;
-  position: relative;
-  left: -13px;
-  top: -30px;
+  position: absolute;
+  left: 43px;
 }
 
 /*Content Side Styles */
@@ -943,6 +949,7 @@ body {
 .top-text .notification {
   text-align: center;
   padding-left: 6px;
+  position: relative;
 }
 
 .top-text .login-radius {
@@ -956,9 +963,8 @@ body {
   background-color: #f58220;
   border-radius: 50%;
   display: inline-block;
-  position: relative;
-  left: -10px;
-  top: -11px;
+  position: absolute;
+  left: 18px;
 }
 
 /*general statistic */
@@ -976,16 +982,38 @@ body {
 
 /* form */
 .form {
-  margin: 20px auto;
+  border-left: 25px solid #f5f5f2;
+  border-right: 25px solid #f5f5f2;
+  display: inline-block;
+  padding: 20px 0px;
 }
 
-.form input {
-  font: 14px "Roboto", sans-serif;
+.form .calendar-form {
   border: 0.5px solid #f5f5f2;
 }
 
 .form .calendar {
-  margin-top: 3px;
+  text-align: center;
+  padding: 15px;
+}
+
+.form .calendar i {
+  text-align: right;
+}
+
+.form input {
+  font: 14px "Roboto", sans-serif;
+  border-style: none;
+}
+
+.refresh {
+  padding: 16px;
+}
+
+.refresh i {
+  background-color: #f58220;
+  padding: 10px;
+  border-radius: 10%;
 }
 
 /*# sourceMappingURL=style.css.map */

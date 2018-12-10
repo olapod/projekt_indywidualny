@@ -8,7 +8,8 @@
 <title>Projekt indywidualny</title>
 </head>
 <body>
-    <section class="container dashboard">
+    <section class="mobile-menu">test</section>
+    <section class="container-fluid dashboard">
         <div class="row">
             <section class="col-sm-2 sidebar">
                 <div class="row">     
@@ -22,12 +23,12 @@
                     </div>
                     <div class="col-sm-12 menu">
                         <ul class="menu-list">
-                            <li></i><a href=""><i class="icon-general"></i>General</a></li>
-                            <li></i><a href=""><i class="icon-links"></i>Links</a></li>
-                            <li></i><a href=""><i class="icon-banners"></i>Banners</a></li>
-                            <li></i><a href=""><i class="icon-personaldata"></i>Personal data</a></li>
-                            <li></i><a href=""><i class="icon-payout"></i>Payout</a></li>
-                            <li></i><a href=""><i class="icon-postback"></i>Postback</a></li>
+                            <li><a href=""><i class="icon-general"></i>General</a></li>
+                            <li><a href=""><i class="icon-links"></i>Links</a></li>
+                            <li><a href=""><i class="icon-banners"></i>Banners</a></li>
+                            <li><a href=""><i class="icon-personaldata"></i>Personal data</a></li>
+                            <li><a href=""><i class="icon-payout"></i>Payout</a></li>
+                            <li><a href=""><i class="icon-postback"></i>Postback</a></li>
                         </ul>
                         <div class="login-face">
                         <h3>YOUR MANAGER</h3>
@@ -38,10 +39,10 @@
                     </div>
                 </div>    
             </section>        
-            <section class="col-sm-10 content-side container">
+            <section class="col-sm-10 content-side container-fluid">
                 <div class="row">
-                    <div class="col-sm-6"></div>
-                    <div class="col-sm-6 top-text container">
+                    <div class="col-sm-8"></div>
+                    <div class="col-sm-4 top-text container-fluid">
                         <div class="row">
                             <div class="col-sm-5 wallet">
                                 <i class="icon-wallet"></i>
@@ -64,26 +65,29 @@
                     <div class="col-sm-12 general-statistic">
                         <h3>GENERAL STATISTIC</h3>
                     </div>
-                    <div class="col-sm-12 form container">
+                    <div class="col-sm-12 form container-fluid">
                         <div class="row">
-                                <div class="col-sm-4"></div>
-                                <div class="col-sm-2">
-                                    <form>
-                                        <input type="date" name="chartstart" max="2000-01-31">
-                                    </form>
+                                <div class="col-sm-3"></div>
+                                <div class="col-sm-5 calendar-form">
+                                    <div class="row">
+                                        <div class="col-sm-5 calendar">
+                                            <form>
+                                                <input type="date" name="chartstart" max="2000-01-31">
+                                            </form>
+                                        </div>
+                                        <div class="col-sm-5 calendar"> 
+                                            <form>
+                                                <input type="date" name="chartstart" min="2018-12-18">
+                                            </form>
+                                        </div>
+                                        <div class="col-sm-2 calendar">
+                                            <i class="icon-calendar"></i>
+                                        </div>
                                 </div>
-                                <div class="col-sm-2">
-                                    <form>
-                                        <input type="date" name="chartstart" min="2018-12-18">
-                                        
-                                    </form>
-                                </div>
-                                <div class="col-sm-1 calendar">
-                                    <i class="icon-calendar"></i>
-                                </div>
-                                <div class="col-sm-3">
-                                        <i class="icon-refresh"></i>
-                                </div>
+                            </div>
+                            <div class="col-sm-4 refresh">
+                                <i class="icon-refresh"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-12 chart"></div>
