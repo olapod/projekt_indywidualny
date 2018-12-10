@@ -350,14 +350,10 @@ template {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .container-fluid {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .row {
@@ -901,7 +897,7 @@ body {
   top: -14px;
 }
 
-.menu .dot {
+.menu .dot-login {
   height: 10px;
   width: 10px;
   background-color: #04ae00;
@@ -915,15 +911,81 @@ body {
 /*Content Side Styles */
 .content-side {
   color: #a6a6a6;
-  border: 20px #a6a6a6 solid;
+  border: 0.5px solid #f5f5f2;
 }
 
+/*top text */
 .top-text {
-  text-align: right;
+  text-align: center;
 }
 
-.top-text i, .top-text h3, .top-text p {
+.top-text i, .top-text h4, .top-text p {
+  display: inline;
+}
+
+.top-text h4 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.top-text p {
+  font-size: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.top-text .wallet, .top-text .notification, .top-text .login, .top-text .quit {
+  border: 0.5px solid #f5f5f2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.top-text .notification {
+  text-align: center;
+  padding-left: 6px;
+}
+
+.top-text .login-radius {
+  border: 1px solid #a6a6a6;
+  border-radius: 50%;
+}
+
+.top-text .dot-notification {
+  height: 6px;
+  width: 6px;
+  background-color: #f58220;
+  border-radius: 50%;
   display: inline-block;
+  position: relative;
+  left: -10px;
+  top: -11px;
+}
+
+/*general statistic */
+.general-statistic {
+  border-left: 25px solid #f5f5f2;
+  border-right: 25px solid #f5f5f2;
+  border-top: 25px solid #f5f5f2;
+  border-bottom: 0.5px solid #f5f5f2;
+}
+
+.general-statistic h3 {
+  padding-left: 20px;
+  font-weight: 400;
+}
+
+/* form */
+.form {
+  margin: 20px auto;
+}
+
+.form input {
+  font: 14px "Roboto", sans-serif;
+  border: 0.5px solid #f5f5f2;
+}
+
+.form .calendar {
+  margin-top: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */
