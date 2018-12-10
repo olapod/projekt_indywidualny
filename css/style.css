@@ -825,28 +825,105 @@ body {
   font: 16px "Roboto", sans-serif;
 }
 
-.sidebar, .contentside {
-  border: 2px solid black;
+.dashboard {
   height: 100vh;
 }
 
-.mainside {
+/* Sidebar styles */
+.sidebar .content-side {
   height: 100vh;
 }
 
 .sidebar {
   background-color: #191919;
+  color: #555555;
 }
 
-.sidebar h3 {
+.sidebar .decorative-text h3 {
   font: 16px "Felipa", cursive;
-  color: #888888;
+  color: white;
+  padding-left: 12px;
+}
+
+.hamburger-menu {
+  margin-top: 12px;
 }
 
 .hamburger-stripe {
   height: 2px;
   background-color: white;
   margin: 5px 3px;
+}
+
+.menu {
+  font-size: 14px;
+  font: "Roboto", sans-serif;
+}
+
+.menu .menu-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.menu .menu-list a {
+  text-decoration: none;
+  color: #555555;
+  font-weight: 400;
+}
+
+.menu .menu-list a:hover {
+  color: white;
+  border-left: 2px #f58220 solid;
+}
+
+.menu .menu-list li {
+  padding: 14px 0;
+}
+
+.menu .menu-list i {
+  padding: 0 12px;
+}
+
+.menu img {
+  border-radius: 50%;
+  margin-left: 12px;
+}
+
+.menu h3 {
+  padding: 12px;
+  font-weight: 400;
+}
+
+.menu p {
+  font-weight: 400;
+  display: inline;
+  position: relative;
+  top: -14px;
+}
+
+.menu .dot {
+  height: 10px;
+  width: 10px;
+  background-color: #04ae00;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  left: -13px;
+  top: -30px;
+}
+
+/*Content Side Styles */
+.content-side {
+  color: #a6a6a6;
+  border: 20px #a6a6a6 solid;
+}
+
+.top-text {
+  text-align: right;
+}
+
+.top-text i, .top-text h3, .top-text p {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */
