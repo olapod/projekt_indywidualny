@@ -48,6 +48,7 @@ body {
       font-size: 14px;
       font: $primary-font;
       height: 100vh;
+   }
 
    .menu-list {
       list-style-type: none;
@@ -80,25 +81,29 @@ body {
       font-weight: 700;
               
    }
-}
-   .manager {
-      list-style-type: none;
 
-      ul>li {
+   ul {
+      padding: 0;
+	   margin: 0;
+      list-style-type: none;
+      position: relative;
+   }
+
+   ul>li {
          display: inline-block;
-      }
-      img {
+         
+         
+   }
+
+   img {
          border-radius: 50%;
          margin-left: 12px;
-        }
-
-      
-
-      p{
-         font-weight: 400;
-         position: absolute;
-         left: 70px;
          
+      }
+
+   p{
+         font-weight: 400;
+                 
       }
    
    .dot-login {
@@ -109,10 +114,11 @@ body {
       display: inline-block;
       position: absolute;
       left: 43px;
-    }
-}
+      top: -1px;
+      
+}}
 
-   
+  
      
    /*Content Side Styles */
 
@@ -126,44 +132,30 @@ body {
    }
    
    /*top text */
-
+ 
    .top-text {
-         text-align: center;
-         
-
-      i, h4, p {
-         display: inline;
-      }
-
-      h4 {
-         padding-left: 10px;
-         padding-right: 10px;
-         
-      }
-
-      p {
-         font-size: 13px;
-         padding-left: 10px;
-         padding-right: 10px;
-      }
-
-      .wallet, .notification, .login, .quit {
-         border: $inside-boarder;
-         padding-top: 10px;
-         padding-bottom: 10px;
-      }
-
-      .notification {
-         text-align: center;
-         padding-left: 6px;
-         position: relative;
-      }
-
-   .login-radius {
-      border: 1px solid $paragraph-color;
-      border-radius: 50%;
       
+   }
+   .top-text {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 auto;
+      
+      
+   li {
+         display: inline-block;
+         
+         min-height: 55px;
+         list-style-type: none;
+         
+         padding-right: 8px;
+         padding-left: 8px;
+         
+         
       }
+      
+      li > i{
+         line-height: 55px;}
 
    .dot-notification {
    height: 6px;
@@ -172,8 +164,37 @@ body {
    border-radius: 50%;
    display: inline-block;
    position: absolute;
-   left: 18px;
+   right: 1px;
+   top: 1px;
+   }
+
+   .notification {
+      position: relative;
+   }
+
+   .login-radius {
+      border: 1px #a6a6a6 solid;
+      border-radius: 50%;
+      
+      
+    
+   }
+
+   
+   li:nth-child(1) {
+      border-left: $inside-boarder;
    }  
+   li:nth-child(4) {
+      border-left: $inside-boarder;
+   }  
+   li:nth-child(5) {
+      border-left: $inside-boarder;
+   }  
+   li:nth-child(7) {
+      border-left: $inside-boarder;
+      border-right: $inside-boarder;
+   }  
+
 }
 
 /*general statistic */
@@ -352,4 +373,3 @@ body {
         color: $paragraph-color;
       }
    }
- 
