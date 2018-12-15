@@ -73,26 +73,35 @@ body {
          padding: 0 12px;
       }
    }
+.login-face {
+
+   h3 {
+      padding: 12px;
+      font-weight: 700;
+              
+   }
+}
+   .manager {
+      list-style-type: none;
+
+      ul>li {
+         display: inline-block;
+      }
       img {
          border-radius: 50%;
          margin-left: 12px;
         }
 
-      h3 {
-         padding: 12px;
-         font-weight: 400;
-                 
-      }
+      
 
       p{
          font-weight: 400;
-         display: inline;
          position: absolute;
          left: 70px;
          
       }
-
-.dot-login {
+   
+   .dot-login {
       height: 10px;
       width: 10px;
       background-color:#04ae00;
@@ -107,6 +116,10 @@ body {
      
    /*Content Side Styles */
 
+   .border {
+      border: $container-boarder;
+      
+   }
    .content-side {
    color: $paragraph-color;
    border: $inside-boarder;  
@@ -165,9 +178,7 @@ body {
 
 /*general statistic */
 .general-statistic {
-   border-left: $container-boarder;
-   border-right: $container-boarder;
-   border-top: $container-boarder;
+   
    border-bottom: $inside-boarder;
 
    h3 {
@@ -179,8 +190,7 @@ body {
 /* form */
 
 .form {
-   border-left: $container-boarder;
-   border-right: $container-boarder;
+   
    border-bottom: $inside-boarder;
    display: inline-block;
    padding: 20px 0px;
@@ -202,9 +212,8 @@ body {
       font: 14px $primary-font;
       border-style: none;
       
-         }
+        }
 
-   
 }
 .refresh {
       padding: 16px;
@@ -218,8 +227,7 @@ body {
 
    /* Table and chart */
 .chart {
-   border-left: $container-boarder;
-   border-right: $container-boarder;
+   
    border-bottom: $container-boarder;
    padding: 30px;
 }
@@ -267,8 +275,7 @@ body {
    }
 
    .links {
-      border-left: $container-boarder;
-      border-right: $container-boarder;
+     
       border-bottom: $inside-boarder;
       
    
@@ -283,8 +290,7 @@ body {
       text-align: center;
       padding-bottom: 25px; 
       padding-top: 25px; 
-      border-left: $container-boarder;
-      border-right: $container-boarder; 
+      
 
        .button {
          margin: 0 auto;
@@ -300,10 +306,7 @@ body {
 
    .links-table {
 
-      border-left: $container-boarder;
-      border-right: $container-boarder;
-
-      table {
+            table {
          margin: 0 auto;
          border-collapse: collapse;
         }
@@ -333,22 +336,20 @@ body {
           border-bottom: $inside-boarder;
        }
    }
-   
+
    .links-table tr:hover {
-          background-color: #f5f5f2;
-         i {
-            visibility: visible;
-            
-         } 
-          .links {
-             color: $box-color;
-           }
-          .trash {
-            color: $paragraph-color;
-          }
+      background-color: #f5f5f2;
+     
+      i {
+        visibility: visible;
+      
+     } 
+      .links {
+         color: $box-color;
        }
 
-   .add-new-bottom {
-      border-bottom: $container-boarder;
+      .trash {
+        color: $paragraph-color;
+      }
    }
    
