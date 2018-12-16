@@ -104,18 +104,37 @@
   /* Media queries */
   @media(max-width: 767px) {
     @include grid('sm');
-  }
+    
+    .sidebar, .top-column {
+      display: none;
+    } 
+    .show {
+        display: block !important;
+      }
+    }
+ 
+      
+
   
   @media(min-width: 768px) {
     @include grid('md');
+    .mobile-menu {
+      display: none;
+    }
   }
   
   @media(min-width: 992px) {
     @include grid('lg');
+    .mobile-menu {
+      display: none;
+    }
   }
-  
+    
   @media(min-width: 1200px) {
     @include grid('xl');
+    .mobile-menu {
+      display: none;
+    }
   }
 
   
