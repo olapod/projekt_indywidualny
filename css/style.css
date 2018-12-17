@@ -897,6 +897,10 @@ body {
   padding: 0 12px;
 }
 
+.show {
+  display: block !important;
+}
+
 .sidebar {
   background-color: #191919;
   color: #555555;

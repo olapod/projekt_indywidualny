@@ -50,7 +50,7 @@ body {
          padding-left: 0px;
          margin: 10px 10px;
          display: none;
-
+         
          li {
             padding: 10px 10px;
             
@@ -69,6 +69,11 @@ body {
    
       }
    }
+
+   .show {
+      display: block !important;
+    }
+  
 
 .sidebar {
    
