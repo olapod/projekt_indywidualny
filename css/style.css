@@ -545,9 +545,6 @@ template {
   .sidebar, .top-column {
     display: none;
   }
-  .show {
-    display: block !important;
-  }
 }
 
 @media (min-width: 768px) {
@@ -876,6 +873,7 @@ body {
   color: white;
   line-height: 55px;
   padding-right: 5px;
+  cursor: pointer;
 }
 
 .mobile-menu .mobile-menu-list {
@@ -1157,6 +1155,7 @@ body {
 }
 
 .links {
+  padding-right: 10px;
   border-bottom: 0.5px solid #f5f5f2;
 }
 

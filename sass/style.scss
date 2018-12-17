@@ -41,6 +41,8 @@ body {
          color: white;
          line-height: 55px;
          padding-right: 5px;
+         cursor: pointer;
+
       }
 
       .mobile-menu-list {  
@@ -352,7 +354,7 @@ body {
    }
 
    .links {
-     
+      padding-right: 10px;
       border-bottom: $inside-boarder;
       
    
