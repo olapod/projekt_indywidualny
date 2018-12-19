@@ -15,16 +15,14 @@ body {
 /* Sidebar styles */
 
 
- 
- 
-   .mobile-menu {
+    .mobile-menu {
       background-color: $sidebar-color;
       color: $sidebar-font-color;
       max-width: 767px;
      
 
       ul:nth-child(1) {
-         list-style-type: none;
+      list-style-type: none;
       padding-left: 0px;
       display: flex;
       justify-content: space-between;
@@ -34,25 +32,29 @@ body {
       h3 {
          font: 16px $handmade-font2;
          color: white;
-         padding-left: 12px;
+         padding-left: 30px;
       }
    
       .hamburger {
          color: white;
          line-height: 55px;
-         padding-right: 5px;
+         padding-right: 10px;
          cursor: pointer;
-
+         
+   
       }
 
       .mobile-menu-list {  
          list-style-type: none;
          padding-left: 0px;
-         margin: 10px 10px;
+         margin: 10px 10px 0px 10px;
          display: none;
+         cursor: pointer;
+
          
          li {
             padding: 10px 10px;
+            border-bottom: 1px $sidebar-font-color solid;
             
          }
          
@@ -61,6 +63,11 @@ body {
             color: $sidebar-font-color;
             font-weight: 400;
             }
+
+         a:hover, {
+               color: white;
+                        }
+
         i {
                padding: 0 12px;
            }
@@ -70,10 +77,25 @@ body {
       }
    }
 
+   .hidden {
+      display: none;
+      color: white;
+      line-height: 55px;
+      padding-right: 10px;
+      cursor: pointer;
+   }
+
    .show {
       display: block !important;
     }
+
+    
+
+    .hide {
+       display: none !important;
+    }
   
+   
 
 .sidebar {
    
@@ -139,7 +161,7 @@ body {
    }
 .login-face {
 
-   h3 {
+   h5 {
       padding: 12px;
       font-weight: 700;
               
@@ -164,8 +186,8 @@ body {
       }
 
    p{
-         font-weight: 400;
-                 
+         font-weight: 300;
+         padding-left: 5px;        
       }
    
    .dot-login {
@@ -175,8 +197,7 @@ body {
       border-radius: 50%;
       display: inline-block;
       position: absolute;
-      left: 43px;
-      top: -1px;
+      left: 45px;
       
 }}
 
@@ -322,40 +343,8 @@ body {
       border-bottom: $inside-boarder;
     }
 
-    .hidden-chart {
-       display: none;
-    }
-
-    .chart-boxes {
-      
-      ul {
-         list-style-type: disc;
-         margin-left: 10px;
-       }
-
-      ul>li {
-         display: inline;
-         list-style-position: inside;
-         padding: 0px 10px;
-         background-color: #f5f5f2;
-         margin: 0 10px;
-      }
-      .dot {
-         
-         height: 6px;
-         width: 6px;
-         background-color: $box-color;
-         border-radius: 50%;
-         display: inline-block;
-         margin-right: 5px;
-         margin-bottom: 2px;
-         
-     }
-   }
-
-   .graph img{
-      max-width: 100%;
-      max-height: 100%;
+   .chart-title {
+      padding: 30px 0px;
    }
 
    .links {

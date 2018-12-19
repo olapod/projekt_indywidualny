@@ -866,25 +866,27 @@ body {
 .mobile-menu h3 {
   font: 16px "Felipa", cursive;
   color: white;
-  padding-left: 12px;
+  padding-left: 30px;
 }
 
 .mobile-menu .hamburger {
   color: white;
   line-height: 55px;
-  padding-right: 5px;
+  padding-right: 10px;
   cursor: pointer;
 }
 
 .mobile-menu .mobile-menu-list {
   list-style-type: none;
   padding-left: 0px;
-  margin: 10px 10px;
+  margin: 10px 10px 0px 10px;
   display: none;
+  cursor: pointer;
 }
 
 .mobile-menu .mobile-menu-list li {
   padding: 10px 10px;
+  border-bottom: 1px #555555 solid;
 }
 
 .mobile-menu .mobile-menu-list a {
@@ -893,12 +895,28 @@ body {
   font-weight: 400;
 }
 
+.mobile-menu .mobile-menu-list a:hover {
+  color: white;
+}
+
 .mobile-menu .mobile-menu-list i {
   padding: 0 12px;
 }
 
+.hidden {
+  display: none;
+  color: white;
+  line-height: 55px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
 .show {
   display: block !important;
+}
+
+.hide {
+  display: none !important;
 }
 
 .sidebar {
@@ -960,7 +978,7 @@ body {
   padding: 0 12px;
 }
 
-.login-face h3 {
+.login-face h5 {
   padding: 12px;
   font-weight: 700;
 }
@@ -982,7 +1000,8 @@ body {
 }
 
 .login-face p {
-  font-weight: 400;
+  font-weight: 300;
+  padding-left: 5px;
 }
 
 .login-face .dot-login {
@@ -992,8 +1011,7 @@ body {
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-  left: 43px;
-  top: -1px;
+  left: 45px;
 }
 
 /*Content Side Styles */
@@ -1126,36 +1144,8 @@ body {
   border-bottom: 0.5px solid #f5f5f2;
 }
 
-.hidden-chart {
-  display: none;
-}
-
-.chart-boxes ul {
-  list-style-type: disc;
-  margin-left: 10px;
-}
-
-.chart-boxes ul > li {
-  display: inline;
-  list-style-position: inside;
-  padding: 0px 10px;
-  background-color: #f5f5f2;
-  margin: 0 10px;
-}
-
-.chart-boxes .dot {
-  height: 6px;
-  width: 6px;
-  background-color: #f58220;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 5px;
-  margin-bottom: 2px;
-}
-
-.graph img {
-  max-width: 100%;
-  max-height: 100%;
+.chart-title {
+  padding: 30px 0px;
 }
 
 .links {

@@ -12,8 +12,13 @@
 <body>
     <section class="mobile-menu">
         <ul>
-            <li><h3>Just do it</h3></li>
-            <li><i class="fas fa-bars hamburger"></i></li>
+            <li>
+            <h3>Just do it</h3>
+            </li>
+            <li>
+            <i class="icon-close hidden"></i>
+            <i class="fas fa-bars hamburger"></i>
+            </li>
         </ul>
         <ul class="mobile-menu-list">
             <li><a href=""><i class="icon-general"></i>General</a></li>
@@ -32,14 +37,7 @@
         <div class="row">
             <section class="col-sm-2 sidebar">
                 <div class="row">     
-                    <div class="col-sm-12 decorative-text">
-                        <ul>
-                            <li><h3>Just do it</h3></li>
-                            <li><i class="fas fa-bars"></i></li>
-                        </ul>
-                        
-                                               
-                    </div>
+                    
                     <div class="col-sm-12 menu">
                         <ul class="menu-list">
                             <li><a href=""><i class="icon-general"></i>General</a></li>
@@ -51,15 +49,16 @@
                             <li><a href=""><i class="icon-postback"></i>Postback</a></li>
                         </ul>
                         <div class="login-face">
-                        <h4>YOUR MANAGER</h4>
                         <ul class="manager">
+                            <li>
+                            <h5>YOUR MANAGER</h5>
+                            </li>
                             <li>
                                 <img src="/images/face.jpg">
                             <span class="dot-login"></span>
+                            <p>Mikhael E.</p>
                             </li>
-                            <li>
-                                <p>Mikhael E.</p>
-                            </li>
+                            
                         </ul>
                         </div>
                     </div>
@@ -138,22 +137,14 @@
                             <div class="col-sm-2"></div>
                             <div class="col-sm-2"></div>
                             <div class="col-sm-8">
-                                    <h3>Earings chart</h3>
+                                    <h3 class="chart-title">Earings chart</h3>
                             </div>
                             <div class="col-sm-2"></div>
-                            <div class="col-sm-2  hidden-chart"></div>
-                            <div class="col-sm-8 chart-boxes  hidden-chart">
-                                <ul>
-                                    <li><span class="dot"></span>Signups</li>
-                                    <li><span class="dot"></span>FTDs</li>
-                                    <li><span class="dot"></span>Earned</li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-2  hidden-chart"></div>
+                           
                             <div class="col-sm-2"></div>
                             <div class="col-sm-8 graph">
-                                <img src="/images/graph.png"  alt="graph">
-                            </div>
+                                <canvas id="myChart"></canvas>
+                                                            </div>
                             <div class="col-sm-2"></div>
                         </div>
                     </div>
@@ -231,6 +222,7 @@
             </section>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
