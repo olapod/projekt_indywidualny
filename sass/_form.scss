@@ -1,22 +1,37 @@
 .personal-data {
    input {
     
-    border: 1px solid black !important;
+    border: $inside-boarder !important;
     background: white !important;
-    margin: 10px 20px;
+    margin: 10px 10px;
 } 
+}
+.first-fields, .second-fields, .third-fields, .four-fields {
+    border-bottom: $inside-boarder;
+}
+
+.second-fields {
+    label {
+        margin-right: 60px;
+    }
+}
+
+.third-fields {
+    label {
+        margin-right: 60px;
+    }
+}
+
+.four-fields {
+    label {
+        margin-right: 35px;
+    }
 }
 
 .field {
     margin: 15px auto;
 }
 
-.line-one {
-    border-bottom: 1px solid black;
-    display: inline-block;
-    width: 100%;
-    position: relative;
-    top: -50px;
+.end {
+    background-color: cyan;
 }
-
-    

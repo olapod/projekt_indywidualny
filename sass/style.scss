@@ -4,6 +4,7 @@
 @import "layout";
 @import "glyphter";
 @import "form";
+@import "modalstyle";
 
 body {
    font: 16px $primary-font;
@@ -236,13 +237,20 @@ body {
          line-height: 42px;
       }
       li > p{
-         font-size: 13px;
-         font-weight: 300;
+         
          margin: 10px auto;
+         
       }
 
       li > h5 {
          margin: 10px auto;
+      }
+
+      li > a {
+         text-decoration: none;
+         cursor: pointer;
+         font-size: 13px;
+         font-weight: 300;
       }
 
    .dot-notification {
@@ -375,6 +383,7 @@ body {
          border-width: 2px;
          border-color: transparent;
          padding: 5px 15px;
+         cursor: pointer;
       } 
    }
 
