@@ -287,7 +287,9 @@ body {
       border-left: $inside-boarder;
       border-right: $inside-boarder;
    }  
-
+   .icon-quit {
+      cursor: pointer;
+   }
    }
 
 /*general statistic */
