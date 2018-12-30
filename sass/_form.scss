@@ -1,11 +1,16 @@
 .personal-data {
    form {
-       
-       ::placeholder {
-           color: red;
-       }
+      text-align: center; 
+      
    }
 
+   label {
+    display: inline-block;   
+    min-width: 100px;
+    text-align: left;
+   }
+
+   
     input {
     
     border: $inside-boarder !important;
@@ -17,43 +22,28 @@
         list-style: none;
         text-align: center;
     }
-    .hidden.mail.input  {
-        display: none !important;
+    
+    ul  {
+        border-bottom: $inside-boarder;
+        padding-bottom: 20px;
+    }
+    .error, .error2 {
+        color: red;
+        font-size: 13px;
+        position: absolute;
+        bottom: 10px
+        
+    }
+    
+       
+    }
+    .first-form {
+        li:nth-child(1) {
+            position: relative;
+        }
+        li:nth-child(3) {
+            position: relative;
+        }
     }
 
-    .show.mail.input {
-        display: inline-block;
-    }
 
-}
-
-
-.first-fields, .second-fields, .third-fields, .four-fields {
-    border-bottom: $inside-boarder;
-}
-
-.second-fields {
-    label {
-        margin-right: 60px;
-    }
-}
-
-.third-fields {
-    label {
-        margin-right: 60px;
-    }
-}
-
-.four-fields {
-    label {
-        margin-right: 35px;
-    }
-}
-
-.field {
-    margin: 15px auto;
-}
-
-.end {
-    background-color: cyan;
-}

@@ -36,19 +36,21 @@ function toggleMenu(visible) {
 
 document.querySelector('form').addEventListener('submit', function(event) {
   var isFormValidate = true;
-  var invalidMail = document.getElementById('invalid_mail');
+  var nameInput = event.target.querySelector('input[name="user_name"]')
   var emailAddressInput = event.target.querySelector('input[name="email_address"]')
   if(emailAddressInput.value.indexOf('@') < 0) {
     isFormValidate = false;
-    /*emailAddressInput.parentElement.querySelector('.error').innerHTML = 'Błędny adres e-mail';*/
-    invalidMail.innerHTML = 'Invalid e-mail address';
+    emailAddressInput.parentElement.querySelector('.error').innerHTML = 'Invalid e-mail address';
+    }
+  if(nameInput.value == "") {
+    isFormValidate = false;
+    nameInput.parentElement.querySelector('.error2').innerHTML = 'Enter you name';
     
   }
-
   return !isFormValidate ? event.preventDefault() : true;
 })
 
-      
+
 
       //Modal zamykanie
 
