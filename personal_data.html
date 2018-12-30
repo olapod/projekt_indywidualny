@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Felipa" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+<title>Projekt indywidualny</title>
+</head>
+<body>
+    <section class="mobile-menu">
+        <ul>
+            <li>
+            <h3>Just do it</h3>
+            </li>
+            <li>
+            <i class="icon-close hidden"></i>
+            <i class="fas fa-bars hamburger"></i>
+            </li>
+        </ul>
+        <ul class="mobile-menu-list">
+            <li><a href="./index.html"><i class="icon-general"></i>General</a></li>
+            <li><a href=""><i class="icon-details"></i>Details</a></li>
+            <li><a href=""><i class="icon-links"></i>Links</a></li>
+            <li><a href=""><i class="icon-banners"></i>Banners</a></li>
+            <li><a href=""><i class="icon-personaldata"></i>Personal data</a></li>
+            <li><a href=""><i class="icon-payout"></i>Payout</a></li>
+            <li><a href=""><i class="icon-postback"></i>Postback</a></li>
+            <li><p  class="open-modal-quit"><i class="icon-login open-modal-quit"></i>Account</p></li>
+            <li><p><i class="icon-quit"></i>Logout</p></li>
+        </ul>
+                   
+    </section>
+    <section class="container-fluid dashboard">
+        <div class="row">
+            <section class="col-sm-2 sidebar">
+                <div class="row">     
+                    
+                    <div class="col-sm-12 menu">
+                        <ul class="menu-list">
+                            <li><a href="./index.html"><i class="icon-general"></i>General</a></li>
+                            <li><a href=""><i class="icon-details"></i>Details</a></li>
+                            <li><a href=""><i class="icon-links"></i>Links</a></li>
+                            <li><a href=""><i class="icon-banners"></i>Banners</a></li>
+                            <li><a href=""><i class="icon-personaldata"></i>Personal data</a></li>
+                            <li><a href=""><i class="icon-payout"></i>Payout</a></li>
+                            <li><a href=""><i class="icon-postback"></i>Postback</a></li>
+                        </ul>
+                        <div class="login-face">
+                        <ul class="manager">
+                            <li>
+                            <h5>YOUR MANAGER</h5>
+                            </li>
+                            <li>
+                                <img src="/images/face.jpg">
+                            <span class="dot-login"></span>
+                            <p>Mikhael E.</p>
+                            </li>
+                            
+                        </ul>
+                        </div>
+                    </div>
+                </div>    
+            </section>        
+            <section class="col-sm-12 col-md-10 content-side container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 top-column">
+                        <ul class="top-text">
+                            <li class="wallet"><i class="icon-wallet"></i></li>
+                            <li><h5>$1,500.00</h5></li>
+                            <li><i class="icon-arrow-down"></i></li>
+                            <li><i class="icon-notification notification"><span class="dot-notification"></span></i></li>
+                            <li><p class="open-modal-quit"><i class="icon-login login-radius open-modal-quit"></i>Leonardo Di Caprio</p></li>
+                            <li><i class="icon-quit"></i></li>
+                        </ul>                                               
+                    </div>
+                <div class="col-sm-12 container-fluid border">
+                    <div class="col-sm-12 general-statistic">
+                        <h3>PERSONAL DATA</h3>
+                    </div>
+                    <div class="col-sm-12 form container-fluid personal-data">
+                        <form action="" novalidate>
+                            <ul>
+                                <li>
+                                    <label>Name</label>
+                                    <input type="text" name="user-name">
+                                    
+                                </li>
+                                <li>
+                                    <label>Surname</label>
+                                    <input type="text" name="user-surname">
+                                
+                                </li>
+                                <li>
+                                    <label for="email">E-mail</label>
+                                    <input type="email" name="email_address" id="email" required>
+                                    
+                                </li>
+                                <li>
+                                    <label>Phone number</label>
+                                    <input type="tel" name="user-phone">
+                                </li>
+                            </ul>
+                         
+                            <ul>            
+                                <li>
+                                    <label>Skype</label>
+                                    <input type="text" name="user-skype">
+                                </li>
+                                <li>
+                                    <label>ICQ</label>
+                                    <input type="text" name="user-icq">
+                                </li>
+                                <li >
+                                    <label>Msn</label>
+                                    <input type="text" name="user-msn">
+                                </li>
+                            </ul>   
+                                                 
+                            <ul>        
+                                <li>
+                                    <label>Wallet</label>
+                                    <input type="text" name="user-wallet">
+                                </li>
+                            </ul>
+                               
+                            <ul>        
+                                <li>
+                                    <label for="psw">Password</label>
+                                    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                                </li>
+                                <li>
+                                    <label>Repeat</label>
+                                    <input type="password" name="rpsw" required>
+                                </li>
+                            </ul>                    
+                              
+                            <button class="button" type="submit" name="submit" value="submit">Save</button>
+                        
+                        </form>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+    </section>
+    <section class="end"></section>
+    <section class="modals">
+        <div class="overlay" id="overlay">
+            <div class="modal" id="myModal">
+                <div class="btn-close js--close-modal">x</div>
+                    <div class="border-bottom">
+                        <h3>LOGIN</h3>
+                    </div>
+                    <form>
+                        <ul>
+                            <li>
+                                <label><i class="icon-login"></i></label>
+                                <input type="text" name="user-login" placeholder="login name">
+                            </li>
+                            <li>
+                                <label><i class="icon-password"></i></label>
+                                <input class="fontAwesome" type="password" id="psw-login" name="user-password" placeholder="password">
+                            </li>
+                            <li>
+                                <button class="button-modal" type="submit">Enter</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>   
+            </div>
+    </section>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>

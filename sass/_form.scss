@@ -1,11 +1,33 @@
 .personal-data {
-   input {
+   form {
+       
+       ::placeholder {
+           color: red;
+       }
+   }
+
+    input {
     
     border: $inside-boarder !important;
     background: white !important;
-    margin: 10px 10px;
-} 
+    margin: 10px 10px;   
+    } 
+
+    ul {
+        list-style: none;
+        text-align: center;
+    }
+    .hidden.mail.input  {
+        display: none !important;
+    }
+
+    .show.mail.input {
+        display: inline-block;
+    }
+
 }
+
+
 .first-fields, .second-fields, .third-fields, .four-fields {
     border-bottom: $inside-boarder;
 }

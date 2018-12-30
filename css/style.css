@@ -545,6 +545,9 @@ template {
   .sidebar, .top-column {
     display: none;
   }
+  .menu-list {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -840,6 +843,140 @@ template {
   content: '\0062';
 }
 
+.personal-data form ::placeholder {
+  color: red;
+}
+
+.personal-data input {
+  border: 0.5px solid #f5f5f2 !important;
+  background: white !important;
+  margin: 10px 10px;
+}
+
+.personal-data ul {
+  list-style: none;
+  text-align: center;
+}
+
+.personal-data .hidden.mail.input {
+  display: none !important;
+}
+
+.personal-data .show.mail.input {
+  display: inline-block;
+}
+
+.first-fields, .second-fields, .third-fields, .four-fields {
+  border-bottom: 0.5px solid #f5f5f2;
+}
+
+.second-fields label {
+  margin-right: 60px;
+}
+
+.third-fields label {
+  margin-right: 60px;
+}
+
+.four-fields label {
+  margin-right: 35px;
+}
+
+.field {
+  margin: 15px auto;
+}
+
+.end {
+  background-color: cyan;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  padding: 30px;
+  display: none;
+}
+
+.overlay.show {
+  display: flex;
+}
+
+.overlay::webkit-scrollbar {
+  display: none;
+}
+
+.modal {
+  max-width: 768px;
+  margin: auto;
+  background-color: #ffffff;
+  position: relative;
+  display: none;
+}
+
+.modal ul {
+  display: flex;
+  align-items: flex-start;
+  list-style-type: none;
+  margin: 20px auto;
+  padding-left: 0px;
+}
+
+.modal li {
+  padding-right: 15px;
+}
+
+.modal h3 {
+  padding: 20px;
+  color: #a6a6a6;
+  font-weight: 400;
+}
+
+.modal form {
+  padding: 20px 15px;
+}
+
+.modal input {
+  padding: 10px;
+  border: 0.5px solid #f5f5f2;
+  font-weight: 400;
+}
+
+.modal .button-modal {
+  margin: 0 auto;
+  display: inline-block;
+  background-color: #f58220;
+  color: white;
+  border-radius: 10%;
+  border-width: 2px;
+  border-color: transparent;
+  padding: 8px 50px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.border-bottom {
+  border-bottom: 0.5px solid #f5f5f2;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+}
+
 body {
   font: 16px "Roboto", sans-serif;
 }
@@ -901,6 +1038,14 @@ body {
 
 .mobile-menu .mobile-menu-list i {
   padding: 0 12px;
+}
+
+.mobile-menu .mobile-menu-list p {
+  margin: 0 auto;
+}
+
+.mobile-menu .mobile-menu-list p:hover {
+  color: white;
 }
 
 .hidden {
@@ -1032,10 +1177,11 @@ body {
 }
 
 .top-text li {
-  display: inline-block;
+  display: flex;
   list-style-type: none;
   padding-right: 8px;
   padding-left: 8px;
+  cursor: pointer;
 }
 
 .top-text li > i {
@@ -1044,7 +1190,6 @@ body {
 
 .top-text li > p {
   font-size: 13px;
-  font-weight: 300;
   margin: 10px auto;
 }
 
@@ -1060,7 +1205,7 @@ body {
   display: inline-block;
   position: absolute;
   right: 1px;
-  top: 1px;
+  top: 8px;
 }
 
 .top-text .notification {
@@ -1070,6 +1215,7 @@ body {
 .top-text .login-radius {
   border: 1px #a6a6a6 solid;
   border-radius: 50%;
+  margin-right: 10px;
 }
 
 .top-text li:nth-child(1) {
@@ -1084,7 +1230,7 @@ body {
   border-left: 0.5px solid #f5f5f2;
 }
 
-.top-text li:nth-child(7) {
+.top-text li:nth-child(6) {
   border-left: 0.5px solid #f5f5f2;
   border-right: 0.5px solid #f5f5f2;
 }
@@ -1173,6 +1319,7 @@ body {
   border-width: 2px;
   border-color: transparent;
   padding: 5px 15px;
+  cursor: pointer;
 }
 
 .links-table table {
@@ -1221,8 +1368,11 @@ body {
 }
 
 @media (max-width: 767px) {
-  .menu-list {
-    display: none;
+  .modal ul {
+    display: inline-block;
+  }
+  .modal li {
+    padding: 10px;
   }
 }
 
