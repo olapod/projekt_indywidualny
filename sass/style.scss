@@ -110,6 +110,7 @@ body {
    
    background-color: $sidebar-color;
    color: $sidebar-font-color;
+   min-width: 150px;
    .decorative-text h3 {
       font: 16px $handmade-font2;
       color: white;
@@ -220,8 +221,9 @@ body {
    }
    .content-side {
    color: $paragraph-color;
-   border: $inside-boarder;  
-   }
+   border: $inside-boarder; 
+   width: calc(100% - 150px);
+    } 
    
    /*top text */
  
@@ -456,9 +458,11 @@ body {
          }
       }
    .personal-data {
-      .error {
+      .error, .error2, .error3 {
          font-size: 10px;
       }
+
+      
    }
    }
 
