@@ -11,7 +11,8 @@ body {
 }
 
 .dashboard {
-   height: 100vh;
+   
+   display: flex;
 }
 
 /* Sidebar styles */
@@ -111,6 +112,7 @@ body {
    background-color: $sidebar-color;
    color: $sidebar-font-color;
    min-width: 150px;
+   
    .decorative-text h3 {
       font: 16px $handmade-font2;
       color: white;
@@ -142,7 +144,7 @@ body {
       .menu {
       font-size: 14px;
       font: $primary-font;
-      height: 100vh;
+      
    }
 
    .menu-list {
